@@ -13,7 +13,7 @@ Este é um programa que converte números binários em números decimais. Ele fo
 
 ## Requisitos
 
-- Python 3.x
+- Python 
 - Tkinter
 
 ## Instalação

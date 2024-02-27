@@ -3,9 +3,12 @@ from tkinter import ttk
 from tkinter import Label
 
 def binary_to_decimal():
-    binary = binary_entry.get()
-    decimal = int(binary, 2)
-    decimal_label.config(text = f"Decimal: {decimal}")
+    try:
+        binary = binary_entry.get()
+        decimal = int(binary, 2)
+        decimal_label.config(text = f"Decimal: {decimal}")
+    except ValueError:
+        decimal_label.config(text = "Invalid input")
 
 window = tk.Tk()
 window.title("Binary to Decimal")
